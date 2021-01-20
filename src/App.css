@@ -1,0 +1,29 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* globals */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --mainYellow: #EEB902;
+  --mainWhite: #F7F7EA;
+  --mainBackground: #FEFEE3;
+  --mainBlack: #000000;
+  --mainGrey: #9AAAAC;
+  --darkGrey: #333333; 
+  
+  --mainTransition: all 0.3s linear;
+
+  --mainMargin: 4%;
+  --mainGutter: 20px;
+
+  --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
+  --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+}

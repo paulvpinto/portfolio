@@ -147,7 +147,7 @@ export default function NavBar() {
   );
 
   const getMenuButtons = () => {
-    return menuButtonData.map(({ label, href }) => {   
+    return menuButtonData.map(({ label, href, blank }) => {   
 
       return (
         <MyNavBarButton
@@ -156,6 +156,7 @@ export default function NavBar() {
             color: "inherit",
             to: href,
             component: RouterLink,
+            target: blank,
           }}
         >
           {label}

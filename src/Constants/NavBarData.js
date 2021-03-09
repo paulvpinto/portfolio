@@ -13,6 +13,6 @@ export const NavBarData = [
     },
     {
       label: "Resume",
-      href: process.env.PUBLIC_URL + "/resume.pdf",
+      href: "/resume.pdf",
     },
   ];

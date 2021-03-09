@@ -5,7 +5,6 @@ import {
 import EmailIcon from '@material-ui/icons/Email';
 
 import styled from 'styled-components';
-import Theme from '../Constants/Theme';
 
 import React from 'react';
 import { Link as RouterLink } from "react-router-dom";

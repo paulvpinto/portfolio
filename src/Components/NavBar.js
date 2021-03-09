@@ -75,7 +75,6 @@ const MyDrawerContainer = styled.div`
 `;
 
 export default function NavBar() {
-  window.console.log("Default theme passing to ThemeProvider", Theme);
 
   const [state, setState] = useState({
     mobileView: false,
@@ -148,7 +147,8 @@ export default function NavBar() {
   );
 
   const getMenuButtons = () => {
-    return menuButtonData.map(({ label, href }) => {
+    return menuButtonData.map(({ label, href }) => {   
+
       return (
         <MyNavBarButton
           {...{

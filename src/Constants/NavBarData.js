@@ -11,4 +11,8 @@ export const NavBarData = [
       label: "Contact",
       href: "/contact",
     },
+    {
+      label: "Resume",
+      href: process.env.PUBLIC_URL + "/resume.pdf",
+    },
   ];

@@ -1,5 +1,4 @@
-import { 
-    Button, 
+import {  
     Typography,
 } from '@material-ui/core'
 
@@ -83,7 +82,6 @@ const Video = Styled(ReactPlayer)`
 export default class WorkDetail extends Component {
     constructor(props) {
         super(props)
-        //console.log(this.props);
         this.state = {
             slug: this.props.match.params.slug,
         };
@@ -107,7 +105,6 @@ export default class WorkDetail extends Component {
         const { name, content } = work;
 
         const WorkContent = content.map((item) => {
-            console.log(item.fields.media);
             var  mediafile;
 
             var type = item.fields.media.type;
@@ -116,10 +113,9 @@ export default class WorkDetail extends Component {
                 mediafile = <PlayerWrapper> <Video url={item.fields.media.url} width='100%' height='100%'> </Video> </PlayerWrapper>;
             }
             else if (type === "image") {
-                mediafile = <img src={item.fields.media.url} alt="Image"></img>;
+                mediafile = <img src={item.fields.media.url} alt="Imagery"></img>;
             }
             else if (type === "gallery") {
-                console.log("works");
                 mediafile = <Gallery images={item.fields.media.gallery}></Gallery>;
             }
             
@@ -139,8 +135,6 @@ export default class WorkDetail extends Component {
                 </>
             )
         })
-
-        console.log(WorkContent);
 
         return (
             <>

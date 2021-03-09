@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from "react";
 import { Route, Switch } from 'react-router-dom'
 import './App.css'
 
@@ -15,6 +15,7 @@ import Contact from './Pages/Contact'
 function App() {
   return (
     <>
+      <Route component={ScrollToTop} />
       <NavBar></NavBar>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -28,5 +29,28 @@ function App() {
     </>
   );
 }
+
+const ScrollToTop = ({ history, location }) => {
+  const dontScrollIntoViewOnPaths = ["/this/that"];
+
+  useEffect(() => {
+    if (history.action === "POP") {
+      return;
+    }
+
+    let { hash, pathname } = location;
+    if (hash) {
+      let element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ block: "start", behavior: "smooth" });
+      }
+    } else if (!dontScrollIntoViewOnPaths.includes(pathname)) {
+      window.scrollTo(0, 0);
+    }
+  });
+
+  return null;
+};
+
 
 export default App;

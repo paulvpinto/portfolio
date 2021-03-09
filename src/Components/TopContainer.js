@@ -1,9 +1,4 @@
-import {
-    Button,
-} from "@material-ui/core"
-
 import Styled from 'styled-components'
-import Theme from '../Constants/Theme'
 import Title from '../Components/Title'
 
 import React from 'react'

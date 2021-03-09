@@ -1,12 +1,8 @@
 import { 
-    Button, 
     Typography,
-    Grid,
-    Paper,
 } from '@material-ui/core'
 
 import styled from 'styled-components'
-import Theme from '../Constants/Theme'
 
 import React, {Component} from 'react'
 import Work from './Work'

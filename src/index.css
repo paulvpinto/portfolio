@@ -7,10 +7,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html, body, #root, .App {
-  height: 100%;
-  overflow-x: hidden;
-}
+html { height: 100%; overflow:auto; }
+body { height: 100%; }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

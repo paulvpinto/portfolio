@@ -14,6 +14,8 @@ export default class WorkProvider extends Component {
 
     componentDidMount() {
         // this.getData();
+        window.scrollTo(0,0);
+        console.log("happening");
         let works = this.formatData(items);
         let featuredWorks = works.filter(work => work.featured === true);
         //

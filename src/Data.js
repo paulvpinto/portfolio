@@ -157,8 +157,8 @@ export default [
                         paragraph: "You are a janitor of the Underworld. Hades threw a tantrum after Pirithous broke into the Underworld again, and now there are lost souls scattered in the deepest, darkest areas where the Soul Eaters reside. Unfortunately, it's not feeding time for another 5000 years, so Hades tossed you down there to clean up the place or be stuck there for eternity. What did you do to deserve this treatment? It’s not like you tried to steal his wife… \n \n This game is a creation for the Global Game Jam 2021.\n \n Role: Game Designer / Programmer \n \n https://agehm.itch.io/guiding-souls \n \n https://globalgamejam.org/2021/games/guiding-souls-6",
                         media:
                             {
-                                type: "image",
-                                url: GuidingSoulsImage1
+                                type: "video",
+                                url: "https://youtu.be/h1-V-hK0pFw"
                             }
                     }
             },

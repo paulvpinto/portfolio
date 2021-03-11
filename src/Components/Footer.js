@@ -75,7 +75,7 @@ function footer() {
             </InfoContainer>
             <InfoContainer>
                 <Email></Email>
-                paul_pinto@hotmail.ca
+                paulpinto.gamedesign@gmail.com
             </InfoContainer>
         </MyFooter>
     )

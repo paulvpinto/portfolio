@@ -163,7 +163,7 @@ function Contact() {
                         Send me an email at 
                     </p>
                     <h3>
-                        paul_pinto@hotmail.ca
+                        paulpinto.gamedesign@gmail.com
                     </h3>
                 </EmailDiv>
                 <OrDiv>

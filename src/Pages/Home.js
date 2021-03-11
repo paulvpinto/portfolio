@@ -79,7 +79,7 @@ export default function Home() {
             <MyGrid>
                 <Tagline>
                     <MyTypography variant="h2">
-                        Hey, I'm Paul Pinto <br></br>
+                        Hey, I'm a Game Designer <br></br>
                         from Vancouver, BC and <br></br>
                         you're visiting my portfolio
                     </MyTypography>

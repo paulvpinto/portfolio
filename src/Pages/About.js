@@ -7,6 +7,8 @@ import TopContainer from '../Components/TopContainer'
 import Styled from 'styled-components'
 import FeaturedWorks from '../Components/FeaturedWorks'
 
+import ProfilePic from "../Images/profile.jpg"
+
 const Container = Styled.div`
     background-color: ${props => props.theme.palette.primary.main};
     display: flex;
@@ -29,7 +31,7 @@ const Bio = Styled(Typography)`
     padding: 3.5rem;
 
     ${props => props.theme.breakpoints.up("md")} {
-        grid-column: 2/6;
+        grid-column: 1/6;
         padding: 0rem 3.5rem;
         font-size: 1.3vw;
     }
@@ -41,32 +43,32 @@ const Bio = Styled(Typography)`
     }
 `;
 
-const Tagline = Styled(Typography)`
-    width: 100%;
-    text-align: center;
-
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-
+const ImageDiv = Styled.div`
+   
     ${props => props.theme.breakpoints.up("md")} {
         grid-column: 6/8;
-        grid-row: 6/7;
+        grid-row: 1/6;
     }
 `;
 
-const ImageContainer1 = Styled.div`
-    background-color: var(--mainYellow);
+const Image = Styled.img`
     width: 40vw;
     height: 40vw;
     
     ${props => props.theme.breakpoints.up("md")} {
-        grid-column: 6/8;
-        grid-row: 1/6;
-        width: 100%;
-        height: 100%;
+        width: 26rem;
+        height: 26rem;
     }
 
+    ${props => props.theme.breakpoints.down("md")} {
+        width: 24rem;
+        height: 24rem;
+    }
+
+    ${props => props.theme.breakpoints.down("sm")} {
+        width: 40vw;
+        height: 40vw;
+    }
 `;
 
 
@@ -75,11 +77,9 @@ function About(props) {
     <> 
         <TopContainer title='About Me'/>
         <Container>
-            <ImageContainer1></ImageContainer1>
-
-            <Tagline>
-            I love to create games.
-            </Tagline>
+            <ImageDiv>
+                <Image src={ProfilePic} alt="A guy wearing a yellow jacket and a white hat."></Image>
+            </ImageDiv>
 
             <Bio>
             Born and raised in Vancouver, I was fortunate enough to play many game consoles and handhelds of the generations. From the gameboy, to the dreamcast, to the playstation, to the xbox, I fell in love with playing video games. But the love didn't just stop at digital gaming, as I had been exposed to Tabletop games and card games splitting my heart in two.

@@ -16,8 +16,13 @@ const menuButtonData = NavBarData;
 const MyFooter = styled.footer`
     background-color: ${props => props.theme.palette.primary.main};
     width: 100%;
+    padding-bottom: 4rem;
     display: flex;
     justify-content: space-between;
+
+    ${props => props.theme.breakpoints.down("sm")} {
+        flex-direction: column;
+    }
 `;
 
 const MyNavBarButton = styled(Button)`
@@ -40,7 +45,7 @@ const InfoContainer = styled.div`
     padding: 1rem 0;
 
     ${props => props.theme.breakpoints.down("sm")} {
-        width: 50%;
+        width: 100%;
         font-size: 0.9rem;
     }
 `;

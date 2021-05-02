@@ -13,7 +13,7 @@ const Container = Styled.div`
     align-items: center;
     
     ${props => props.theme.breakpoints.down("sm")} {
-        height: 15%;
+        height: 20vh;
     }
 `;
 

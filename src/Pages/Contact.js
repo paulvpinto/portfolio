@@ -15,6 +15,7 @@ const Container = Styled.div`
         flex-direction: column;
         align-content: center;
         height: 100%;
+        width: 100%;
     }
 `;
 
@@ -33,6 +34,14 @@ const EmailDiv = Styled.div`
 
     ${props => props.theme.breakpoints.down("sm")} {
         width: 100%;
+
+        p {
+            font-size: 1.2rem;
+        }
+    
+        h3 {
+            font-size: 1.3rem;
+        }
     }
 `;
 
@@ -42,6 +51,15 @@ const ContactFormText = Styled.div`
 
     p {
         font-size: 1.4rem;
+    }
+
+    ${props => props.theme.breakpoints.down("sm")} {
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        padding: 2rem;
     }
 `;
 
@@ -53,6 +71,7 @@ const OrDiv = Styled.div`
 
     ${props => props.theme.breakpoints.down("sm")} {
         width: 100%;
+        padding: 1rem;
     }
 `;
 

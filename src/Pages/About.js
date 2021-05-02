@@ -66,8 +66,8 @@ const Image = Styled.img`
     }
 
     ${props => props.theme.breakpoints.down("sm")} {
-        width: 40vw;
-        height: 40vw;
+        width: 70vw;
+        height: 70vw;
     }
 `;
 
